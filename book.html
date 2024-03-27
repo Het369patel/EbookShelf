@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/resets.css" />
+    <link rel="stylesheet" href="css/books/book.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/books/grids.css" />
+    <link rel="stylesheet" href="css/carausel.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <title>EbookShelf | Books</title>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav class="NavBar">
+      <div class="logo">
+        <img src="Assets/Logo.svg" alt="EBOOKSHELF" srcset="" />
+      </div>
+      <ul class="navList">
+        <li class="navLink"><a class="Link" href="#Home">Home</a></li>
+        <li class="navLink">
+          <a class="Link" href="#discover">Discover</a>
+        </li>
+        <li class="navLink"><a class="Link" href="manga.html">Manga</a></li>
+      </ul>
+      <div class="searchbox">
+        <img src="Assets/searchIcon.svg" alt="Search" srcset="" />
+        <input type="text" placeholder="search.." />
+      </div>
+      <div class="buttons">
+        <button class="btn">Login</button>
+        <button class="btn">SignUp</button>
+      </div>
+      <div class="menuIcon">
+        <img src="Assets/menu.svg" alt="" srcset="" />
+      </div>
+    </nav>
+    <!-- navbar ends -->
+    <!-- carausel starts -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item item-1 active">
+          <div class="bookImage">
+            <img
+              src="Assets/book-Images/S4.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>In The Search Of Schrodinger's Cat</h5>
+            <p>In Search of Schrodinger's Cat tells the complete story of quantum mechanics, a truth stranger than any fiction. John Gribbin takes us step by step into an ever more bizarre and fascinating place, requiring only that we approach it with an open mind. He introduces the scientists who developed quantum theory.</p>
+          </div>
+        </div>
+        <div class="carousel-item item-2">
+          <div class="bookImage">
+            <img
+              src="Assets/book-Images/N4.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>400 Days</h5>
+            <p>A mystery thriller that follows the journey of Keshav, the central character. While studying for his IPS exams, Keshav runs a private detective agency with his friend Saurabh. The book has the classic Chetan Bhagat style that blends romance, humor, family drama, and mystery.</p>
+          </div>
+        </div>
+        <div class="carousel-item item-3">
+          <div class="bookImage">
+            <img
+              src="Assets/book-Images/SF6.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Steve Jobs</h5>
+            <p>This book chronicles the daring and adventurous life of Steve Jobs, an innovative businessman and eccentric founder of Apple. Drawing on Jobs' early experiences with the spirit and aspiration to reach the pinnacle of becoming a worldwide technology icon, Steve Jobs describes his successful business journey as well as his battles. that he had to confront on his journey.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carausel ends -->
+    <!-- Main content starts -->
+    <section class="contentblock">
+      <!-- recommendec-books -->
+      <div class="grid-container">
+        <div class="section-heading">
+          <p>Recommended Books</p>
+        </div>
+        <div class="book-list">
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/S3.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The Easiest Quantum Physics Book Ever</p>
+              </div>
+              <div class="AuthorName">
+                <p>Aditya Yadav</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/SF2.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The Power of Your Subconscious Mind</p>
+              </div>
+              <div class="AuthorName">
+                <p>Joseph Murphy</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/SF3.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The Courage To Be Disliked</p>
+              </div>
+              <div class="AuthorName">
+                <p>Fumitake Koga and Ichiro Kishimi</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/S4.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>In The Search Of Schrodinger's Cat</p>
+              </div>
+              <div class="AuthorName">
+                <p>John Gribbin</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/N1.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The Alchemist</p>
+              </div>
+              <div class="AuthorName">
+                <p>Panlo Coelho</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/N2.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>That Night</p>
+              </div>
+              <div class="AuthorName">
+                <p>Nidhi Upadhyay</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- categories -->
+      <div class="grid-container" id="discover">
+        <div class="section-heading">
+          <p>Discover</p>
+        </div>
+        <div class="category-list">
+          <div class="category">
+            <p>Fiction</p>
+          </div>
+          <div class="category">
+            <p>Science</p>
+          </div>
+          <div class="category">
+            <p>Romance</p>
+          </div>
+          <div class="category">
+            <p>History</p>
+          </div>
+          <div class="category">
+            <p>Biography</p>
+          </div>
+          <div class="category">
+            <p>Travel</p>
+          </div>
+          <div class="category">
+            <p>Music</p>
+          </div>
+          <div class="category">
+            <p>Comedy</p>
+          </div>
+          <div class="category">
+            <p>Drama</p>
+          </div>
+          <div class="category">
+            <p>Horror</p>
+          </div>
+          <div class="category">
+            <p>Thriller</p>
+          </div>
+          <div class="category">
+            <p>War</p>
+          </div>
+        </div>
+      </div>
+      <!-- science -->
+      <div class="grid-container">
+        <div class="section-heading">
+          <p>Science</p>
+        </div>
+        <div class="book-list">
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/S1.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The Theory Of Everything</p>
+              </div>
+              <div class="AuthorName">
+                <p>tephen Hawking</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/S2.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>Black Holes : The BBC Reith Lectures</p>
+              </div>
+              <div class="AuthorName">
+                <p>Stephen Hawking</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/S3.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The Easiest Quantum Physics Book Ever</p>
+              </div>
+              <div class="AuthorName">
+                <p>Aditya Yadav</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/S4.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>In The Search Of Schrodinger's Cat</p>
+              </div>
+              <div class="AuthorName">
+                <p>John Gribbin</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/S5.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>Infinite Powers</p>
+              </div>
+              <div class="AuthorName">
+                <p>Steven Strogatz</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/S6.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The Book Of Why</p>
+              </div>
+              <div class="AuthorName">
+                <p>Judca Pcarl</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- novels -->
+      <div class="grid-container">
+        <div class="section-heading">
+          <p>Novels</p>
+        </div>
+        <div class="book-list">
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/N1.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The Alchemist</p>
+              </div>
+              <div class="AuthorName">
+                <p>Panlo Coelho</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/N2.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>That Night</p>
+              </div>
+              <div class="AuthorName">
+                <p>Nidhi Upadhyay</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/N3.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>You Are The Best Friend</p>
+              </div>
+              <div class="AuthorName">
+                <p>Ajay K Pandey</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/N4.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>400 Days</p>
+              </div>
+              <div class="AuthorName">
+                <p>Chetan Bhagat</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/N5.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>A Boy Who Walked And Found</p>
+              </div>
+              <div class="AuthorName">
+                <p>Kirtish Datwani</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/N6.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>Before The Coffee Gets Cold</p>
+              </div>
+              <div class="AuthorName">
+                <p>Toshikazu Kawaguchi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- self-help-books -->
+      <div class="grid-container">
+        <!-- recommended books -->
+        <div class="section-heading">
+          <p>Self-Help Books</p>
+        </div>
+        <!-- book list -->
+        <div class="book-list">
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/SF1.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The 7 habits of highly effective people</p>
+              </div>
+              <div class="AuthorName">
+                <p>Stephen R Covey</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/SF2.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The Power of Your Subconscious Mind</p>
+              </div>
+              <div class="AuthorName">
+                <p>Joseph Murphy</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/SF3.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>The Courage To Be Disliked</p>
+              </div>
+              <div class="AuthorName">
+                <p>Fumitake Koga and Ichiro Kishimi</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/SF4.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>Death : An Inside Story</p>
+              </div>
+              <div class="AuthorName">
+                <p>Sadhguru</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/SF5.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>Elon Musk</p>
+              </div>
+              <div class="AuthorName">
+                <p>Walter Isaacson</p>
+              </div>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="Assets/book-Images/SF6.jpg" alt="" srcset="" />
+            </div>
+            <div class="book-detail">
+              <div class="BookTitle">
+                <p>Steve Jobs</p>
+              </div>
+              <div class="AuthorName">
+                <p>Walter Isaacson</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer>
+        <div class="footer-container contentblock">
+          <div class="site-info">
+            <div class="site-logo">
+              <img src="Assets/Logo.svg" alt="" srcset="" />
+            </div>
+            <div class="site-name">
+              <a href="books.html">ebookshelf.com</a>
+            </div>
+          </div>
+          <div class="site-category-list">
+            <div class="heading"><p>Categories</p></div>
+            <div class="cat-list">
+              <ul>
+                <li><a href="#cat-1">Horror</a></li>
+                <li><a href="#cat-2">Drama</a></li>
+                <li><a href="#cat-3">Romance</a></li>
+                <li><a href="#cat-4">Biography</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="news-info">
+            <div class="heading-info">
+              <div class="heading"><p>News/Updates</p></div>
+              <div class="heading-description">
+                <p>subscribe to get latest updates of ebooks.</p>
+              </div>
+            </div>
+            <div class="input-info">
+              <div class="input-email">
+                <img src="Assets/email-icon.svg" alt="" srcset="" />
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="enter email"
+                />
+              </div>
+              <button>subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <p>copyright 2024, all right reserved.</p>
+        </div>
+      </footer>
+    </section>
+    <!-- main content ends -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="animations.js"></script>
+  </body>
+</html>

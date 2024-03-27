@@ -1,0 +1,30 @@
+.contentblock {
+    width: 100%;
+    position: relative;
+}
+
+.grid-container {
+    padding: 0px 20px;
+}
+
+@media (width > 1440px) {
+    .contentblock {
+        padding: 0px 130px;
+    }
+}
+
+@media (width <= 1440px) {
+    .contentblock {
+       padding:0px 30px;
+    }
+}
+
+@media (width <= 480px) {
+    .grid-container {
+        padding: 0px 20px;
+    }
+
+    .contentblock {
+        padding: 0px 0px;
+    }
+}
