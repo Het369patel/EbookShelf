@@ -89,7 +89,7 @@
     }
 }
 
-@media (width <=768px) {
+@media (width <= 768px) {
     .carousel {
         height: 50vh;
     }

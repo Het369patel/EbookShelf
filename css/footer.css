@@ -67,9 +67,9 @@
 .input-email{
     display: flex;
     align-items: center;
-    max-height: 5.755395683453237vh;
-    max-width: 16.145833333333332vw;
-    border-radius: 20px;
+    max-height: 42px;
+    max-width:248px;
+    border-radius: 8px;
     padding: 8px 16px;
     border: 2.5px solid var(--border_color);
     background-color: var(--item_bgcolor);
@@ -89,6 +89,42 @@
     font-size: 0.875rem;
     font-weight: 600;
     border: 2.5px solid var(--border_color);
-    border-radius: 60px;
+    border-radius: 8px;
     background-color:var(--link_foreground);
+}
+
+@media (width <= 670px){
+    .footer-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap:20px;
+        margin:0px auto;
+        padding-inline:20px;
+    }
+
+    .input-info{
+        display: flex;
+        align-items: center;
+        gap:20px;
+    }
+
+    .input-email{
+        display: flex;
+        align-items: center;
+        max-height: 42px;
+        max-width: 248px;
+        border-radius: 8px;
+        padding: 8px 16px;
+        border: 2.5px solid var(--border_color);
+        background-color: var(--item_bgcolor);
+    }
+
+    .input-email input{
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 0.875rem;
+        margin-left: 6px;
+    }
 }

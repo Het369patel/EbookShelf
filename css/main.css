@@ -1,3 +1,5 @@
+/* common styling */
+
 .contentblock {
     width: 100%;
     position: relative;
@@ -27,4 +29,42 @@
     .contentblock {
         padding: 0px 0px;
     }
+}
+
+
+/* styling index.html */
+.site-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options{
+    width:100vw;
+    height: 80vh;
+    margin:20px auto;
+    background-color: grey;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.option{
+    width:150%;
+    height: 180%;
+    position: relative;
+    top:-15%;
+    left:1.5%;
+    transform: scale(8);
+}
+
+.option-1{
+    background-color: rgb(180, 150, 114);
+    transform: rotate(350deg);
+    
+}
+
+.option-2{
+    background-color: antiquewhite;
+    transform: rotate(350deg);
+    
 }
