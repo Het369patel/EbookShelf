@@ -8,6 +8,9 @@
     background-color: var(--nav_bgcolor);
 }
 
+.NavBar-Manga{
+    background-color:#5F25A6;
+}
 .NavBar .logo {
     display: flex;
     align-items: center;
@@ -24,7 +27,8 @@
 
 .NavBar .navList .Link {
     color: var(--link_foreground);
-    font-size: 0.875rem;
+    font-size: 1rem;    
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -39,6 +43,10 @@
     background-color: var(--item_bgcolor);
 }
 
+.NavBar-Manga .searchbox-manga{
+    border-color: #D0E6A5;
+}
+
 .NavBar .searchbox input {
     height: 100%;
     width: 100%;
@@ -47,6 +55,9 @@
     font-size: 0.875rem;
 }
 
+.NavBar.searchbox img{
+    margin-right: 8px;
+}
 .NavBar .buttons {
     display: flex;
     align-items: center;
@@ -60,7 +71,11 @@
     font-weight: 600;
     border: 2.5px solid var(--border_color);
     border-radius: 60px;
-    background-color:var(--link_foreground);
+    background-color: var(--link_foreground);
+}
+
+.NavBar-Manga .btn-manga{
+    border-color: #D0E6A5;
 }
 
 .menuIcon {
@@ -77,19 +92,19 @@
 }
 
 
-@media (width >=550px) {
+@media (width >= 550px) {
     .menuIcon {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
     .NavBar .buttons {
         display: none;
     }
 }
 
-@media (max-width:550px) {
+@media (width < 550px) {
     .NavBar .navList {
         display: none;
     }
