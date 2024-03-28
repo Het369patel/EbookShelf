@@ -30,7 +30,7 @@
     background-color: #EDC9AF;
 }
 
-.bookImage{
+.bookImage {
     position: absolute;
     right: 0;
     top: 0;
@@ -51,14 +51,14 @@
     left: 10%;
     top: 15%;
     padding: 20px;
-    width: 40%; 
+    width: 40%;
 }
 
-.carousel-caption h5{
+.carousel-caption h5 {
     font-weight: 600;
 }
 
-.carousel-caption p{
+.carousel-caption p {
     font-size: 0.875rem;
     font-weight: 500;
 }
@@ -75,7 +75,7 @@
     }
 
     .carousel-caption {
-        width:40%;
+        width: 40%;
     }
 }
 
@@ -84,17 +84,24 @@
         width: 60vw;
         margin: 20px auto;
     }
+
     .carousel-caption {
         width: calc(100% - 300px);
+        position: absolute;
+        left: 10%;
+        top: 15%;
+        padding: 20px;
+        width: 40%;
     }
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
     .carousel {
         height: 50vh;
     }
-    .carousel-item{
-        margin:0px auto;
+
+    .carousel-item {
+        margin: 0px auto;
     }
 }
 
