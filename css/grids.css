@@ -3,6 +3,48 @@
     gap: 20px;
 }
 
+.book-image{
+    position: relative;
+    top:0;
+    left:0;
+    aspect-ratio: 2/ 3;
+    transition:0.2s ease-in-out;
+}
+
+.book-image:hover {
+    top:-14px;
+    box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.1);
+  }
+
+.book-image img{
+    height: 100%;
+    width:100%;
+    object-fit:cover;
+}
+
+.book-detail{
+    margin-top:12px;
+}
+
+.BookTitle p{
+    font-weight: 500;
+}
+
+.AuthorName p{
+    font-size:0.8rem;
+    margin-top: -14px;
+    opacity: 0.9;
+}
+
+.section-heading{
+    margin:16px 0px;
+}
+
+.section-heading p{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 .category-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
