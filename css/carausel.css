@@ -114,7 +114,7 @@
     }
 }
 
-@media (480px > width >=1200px) {
+@media (480px > width >= 1200px) {
     .carousel {
         width: 60vw;
         margin: 20px auto;

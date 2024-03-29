@@ -13,7 +13,7 @@
 }
 
 .message p {
-    font-size: .850rem;
+    font-size: 0.850rem;
     font-weight: 500;
     opacity: 0.5;
 }
@@ -100,7 +100,7 @@
     background-color: var(--link_foreground);
 }
 
-@media (width <=670px) {
+@media (width <= 670px) {
     .footer-container {
         display: flex;
         flex-direction: column-reverse;
