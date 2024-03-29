@@ -101,10 +101,6 @@
     .menuIcon {
         display: none;
     }
-
-    .menu-list {
-        display: none;
-    }
 }
 
 @media (width < 768px) {
@@ -123,10 +119,6 @@
     }
 
     .NavBar .searchbox {
-        display: none;
-    }
-
-    .menu-list {
         display: none;
     }
 }

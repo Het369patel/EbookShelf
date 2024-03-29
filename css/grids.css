@@ -84,7 +84,8 @@
     color: #f2e9e4;
 }
 
-@media (width >=1440px) {
+/* making book list and category list  responsive for each device screens  */
+@media (width >= 1440px) {
     .book-list {
         grid-template-columns: repeat(6, 1fr);
     }
