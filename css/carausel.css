@@ -69,7 +69,7 @@
     right: 0;
     top: 0;
     height: 100%;
-    margin-right: 140px;
+    margin-right: 20%;
     aspect-ratio: 2 / 3;
 }
 
@@ -138,10 +138,18 @@
     .carousel-item {
         margin: 0px auto;
     }
+
+    .bookImage {
+        margin-right: 30%;
+    }
 }
 
 @media (width <=480px) {
     .carousel {
         height: 44vh;
+    }
+
+    .bookImage {
+        margin-right: 25%;
     }
 }
