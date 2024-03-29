@@ -8,9 +8,10 @@
     background-color: var(--nav_bgcolor);
 }
 
-.NavBar-Manga{
-    background-color:#5F25A6;
+.NavBar-Manga {
+    background-color: #5F25A6;
 }
+
 .NavBar .logo {
     display: flex;
     align-items: center;
@@ -27,13 +28,14 @@
 
 .NavBar .navList .Link {
     color: var(--link_foreground);
-    font-size: 1rem;    
+    font-size: 1rem;
     font-weight: 500;
-    text-decoration: none;
 }
-.NavBar .Link:hover{
-    color:#F9D848;
+
+.NavBar .Link:hover {
+    color: #F9D848;
 }
+
 .NavBar .searchbox {
     display: flex;
     align-items: center;
@@ -45,7 +47,7 @@
     background-color: var(--item_bgcolor);
 }
 
-.NavBar-Manga .searchbox-manga{
+.NavBar-Manga .searchbox-manga {
     border-color: #D0E6A5;
 }
 
@@ -57,9 +59,10 @@
     font-size: 0.875rem;
 }
 
-.NavBar.searchbox img{
+.NavBar.searchbox img {
     margin-right: 8px;
 }
+
 .NavBar .buttons {
     display: flex;
     align-items: center;
@@ -76,7 +79,7 @@
     background-color: var(--link_foreground);
 }
 
-.NavBar-Manga .btn-manga{
+.NavBar-Manga .btn-manga {
     border-color: #D0E6A5;
 }
 
@@ -94,11 +97,12 @@
 }
 
 
-@media (width >= 550px) {
+@media (width >=550px) {
     .menuIcon {
         display: none;
     }
-    .menu-list{
+
+    .menu-list {
         display: none;
     }
 }
@@ -121,7 +125,8 @@
     .NavBar .searchbox {
         display: none;
     }
-    .menu-list{
+
+    .menu-list {
         display: none;
     }
 }

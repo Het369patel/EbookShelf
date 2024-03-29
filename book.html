@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- css files -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/grids.css" />
     <link rel="stylesheet" href="css/carausel.css" />
@@ -25,9 +28,11 @@
   <body>
     <!-- navbar starts -->
     <nav class="NavBar">
+      <!-- site-logo -->
       <div class="logo">
         <img src="Assets/Logo.svg" alt="EBOOKSHELF" srcset="" />
       </div>
+      <!-- Nav-link  list -->
       <ul class="navList">
         <li class="navLink"><a class="Link" href="index.html">Home</a></li>
         <li class="navLink">
@@ -35,17 +40,21 @@
         </li>
         <li class="navLink"><a class="Link" href="manga.html">Manga</a></li>
       </ul>
+      <!-- searchbox -->
       <div class="searchbox">
         <img src="Assets/searchIcon.svg" alt="Search" srcset="" />
         <input type="text" placeholder="search.." />
       </div>
+      <!-- auth buttons -->
       <div class="buttons">
         <button class="btn">Login</button>
         <button class="btn">SignUp</button>
       </div>
+      <!-- menu icon for phone screens -->
       <div class="menuIcon">
         <img src="Assets/menu.svg" alt="" srcset="" />
       </div>
+      <!-- menu list for phone screens -->
       <div class="menu-list">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -55,13 +64,18 @@
       </div>
     </nav>
     <!-- navbar ends -->
-    <!-- carausel starts -->
+
+    <!-- carausel starts   -->
+    <!-- bootstrap -->
+    <!-- modification :: bookImage and discription -->
     <div
       id="carouselExampleCaptions"
-      class="carousel slide"
+      class="carousel carousel-book slide"
       data-bs-ride="carousel"
     >
+      <!-- slide indicator -->
       <div class="carousel-indicators">
+        <!-- indicator 1 -->
         <button
           type="button"
           data-bs-target="#carouselExampleCaptions"
@@ -70,12 +84,14 @@
           aria-current="true"
           aria-label="Slide 1"
         ></button>
+        <!-- indicator 2 -->
         <button
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
+        <!-- indicator  3 -->
         <button
           type="button"
           data-bs-target="#carouselExampleCaptions"
@@ -84,10 +100,13 @@
         ></button>
       </div>
       <div class="carousel-inner">
+        <!-- slide 1 -->
         <div class="carousel-item item-1 active">
+          <!-- slide 1 image -->
           <div class="bookImage">
             <img src="Assets/book-Images/S4.jpg" alt="" srcset="" />
           </div>
+          <!-- slide 1 discription -->
           <div class="carousel-caption d-none d-md-block">
             <h5>In The Search Of Schrodinger's Cat</h5>
             <p>
@@ -99,10 +118,13 @@
             </p>
           </div>
         </div>
+        <!-- slide 2 -->
         <div class="carousel-item item-2">
+          <!-- slide 2 image-->
           <div class="bookImage">
             <img src="Assets/book-Images/N4.jpg" alt="" srcset="" />
           </div>
+          <!-- slide 2 discription -->
           <div class="carousel-caption d-none d-md-block">
             <h5>400 Days</h5>
             <p>
@@ -114,10 +136,13 @@
             </p>
           </div>
         </div>
+        <!-- slide 3 -->
         <div class="carousel-item item-3">
+          <!-- slide 3 image -->
           <div class="bookImage">
             <img src="Assets/book-Images/SF6.jpg" alt="" srcset="" />
           </div>
+          <!-- slide 3 dicription -->
           <div class="carousel-caption d-none d-md-block">
             <h5>Steve Jobs</h5>
             <p>
@@ -131,6 +156,7 @@
           </div>
         </div>
       </div>
+      <!-- prev button -->
       <button
         class="carousel-control-prev"
         type="button"
@@ -140,6 +166,7 @@
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
+      <!-- next button -->
       <button
         class="carousel-control-next"
         type="button"
@@ -153,25 +180,33 @@
     <!-- carausel ends -->
     <!-- Main content starts -->
     <section class="contentblock">
-      <!-- recommendec-books -->
+      <!-- recommended-books-section -->
       <div class="grid-container">
+        <!-- heading -->
         <div class="section-heading">
           <p>Recommended Books</p>
         </div>
+        <!-- book list starts -->
         <div class="book-list">
+          <!-- book 1 -->
           <div class="book">
+            <!-- each book contains book-cover -->
             <div class="book-image">
               <img src="Assets/book-Images/S3.jpg" alt="" srcset="" />
             </div>
+            <!-- each book contains book-discription -->
             <div class="book-detail">
+              <!-- book-title -->
               <div class="BookTitle">
                 <p>The Easiest Quantum Physics Book Ever</p>
               </div>
+              <!-- book-author -->
               <div class="AuthorName">
                 <p>Aditya Yadav</p>
               </div>
             </div>
           </div>
+          <!-- book 2 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/SF2.jpg" alt="" srcset="" />
@@ -185,6 +220,7 @@
               </div>
             </div>
           </div>
+          <!-- book 3 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/SF3.jpg" alt="" srcset="" />
@@ -198,6 +234,7 @@
               </div>
             </div>
           </div>
+          <!-- book 4 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/S4.jpg" alt="" srcset="" />
@@ -211,6 +248,7 @@
               </div>
             </div>
           </div>
+          <!-- book 5 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/N1.jpg" alt="" srcset="" />
@@ -224,6 +262,7 @@
               </div>
             </div>
           </div>
+          <!-- book 6 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/N2.jpg" alt="" srcset="" />
@@ -237,58 +276,77 @@
               </div>
             </div>
           </div>
+          <!-- book-list ends -->
         </div>
       </div>
-      <!-- categories -->
+      <!-- categories section -->
       <div class="grid-container" id="discover">
+        <!-- heading -->
         <div class="section-heading">
           <p>Discover</p>
         </div>
+        <!-- category list starts -->
         <div class="category-list">
+          <!-- category 1 -->
           <div class="category">
             <p>Fiction</p>
           </div>
+          <!-- category 2 -->
           <div class="category">
             <p>Science</p>
           </div>
+          <!-- category 3 -->
           <div class="category">
             <p>Romance</p>
           </div>
+          <!-- category 4 -->
           <div class="category">
             <p>History</p>
           </div>
+          <!-- category 5 -->
           <div class="category">
             <p>Biography</p>
           </div>
+          <!-- category 6 -->
           <div class="category">
             <p>Travel</p>
           </div>
+          <!-- category 7 -->
           <div class="category">
             <p>Music</p>
           </div>
+          <!-- category 8 -->
           <div class="category">
             <p>Comedy</p>
           </div>
+          <!-- category 9 -->
           <div class="category">
             <p>Drama</p>
           </div>
+          <!-- category 10 -->
           <div class="category">
             <p>Horror</p>
           </div>
+          <!-- category 11 -->
           <div class="category">
             <p>Thriller</p>
           </div>
+          <!-- category 12 -->
           <div class="category">
             <p>War</p>
           </div>
         </div>
+        <!-- category list ends -->
       </div>
-      <!-- science -->
+      <!-- science section starts -->
       <div class="grid-container">
+        <!-- heading -->
         <div class="section-heading">
           <p>Science</p>
         </div>
+        <!-- book-list starts -->
         <div class="book-list">
+          <!-- book 1 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/S1.jpg" alt="" srcset="" />
@@ -302,6 +360,7 @@
               </div>
             </div>
           </div>
+          <!-- book 2 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/S2.jpg" alt="" srcset="" />
@@ -315,6 +374,7 @@
               </div>
             </div>
           </div>
+          <!-- book 3 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/S3.jpg" alt="" srcset="" />
@@ -328,6 +388,7 @@
               </div>
             </div>
           </div>
+          <!-- book 4 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/S4.jpg" alt="" srcset="" />
@@ -341,6 +402,7 @@
               </div>
             </div>
           </div>
+          <!-- book 5 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/S5.jpg" alt="" srcset="" />
@@ -354,6 +416,7 @@
               </div>
             </div>
           </div>
+          <!-- book 6 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/S6.jpg" alt="" srcset="" />
@@ -368,13 +431,17 @@
             </div>
           </div>
         </div>
+        <!-- book-list ends -->
       </div>
-      <!-- novels -->
+      <!-- novels section starts-->
       <div class="grid-container">
+        <!-- heading -->
         <div class="section-heading">
           <p>Novels</p>
         </div>
+        <!-- book-list starts -->
         <div class="book-list">
+          <!-- book 1 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/N1.jpg" alt="" srcset="" />
@@ -388,6 +455,7 @@
               </div>
             </div>
           </div>
+          <!-- book 2 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/N2.jpg" alt="" srcset="" />
@@ -401,6 +469,7 @@
               </div>
             </div>
           </div>
+          <!-- book 3 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/N3.jpg" alt="" srcset="" />
@@ -414,6 +483,7 @@
               </div>
             </div>
           </div>
+          <!-- book 4 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/N4.jpg" alt="" srcset="" />
@@ -427,6 +497,7 @@
               </div>
             </div>
           </div>
+          <!-- book 5 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/N5.jpg" alt="" srcset="" />
@@ -440,6 +511,7 @@
               </div>
             </div>
           </div>
+          <!-- book 6 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/N6.jpg" alt="" srcset="" />
@@ -454,15 +526,18 @@
             </div>
           </div>
         </div>
+        <!-- book-list ends -->
       </div>
+      <!-- novel section ends -->
       <!-- self-help-books -->
       <div class="grid-container">
-        <!-- recommended books -->
+        <!-- self help books -->
         <div class="section-heading">
           <p>Self-Help Books</p>
         </div>
         <!-- book list -->
         <div class="book-list">
+          <!-- book 1 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/SF1.jpg" alt="" srcset="" />
@@ -476,6 +551,7 @@
               </div>
             </div>
           </div>
+          <!-- book 2 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/SF2.jpg" alt="" srcset="" />
@@ -489,6 +565,7 @@
               </div>
             </div>
           </div>
+          <!-- book 3 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/SF3.jpg" alt="" srcset="" />
@@ -502,6 +579,7 @@
               </div>
             </div>
           </div>
+          <!-- book 4 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/SF4.jpg" alt="" srcset="" />
@@ -515,6 +593,7 @@
               </div>
             </div>
           </div>
+          <!-- book 5 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/SF5.jpg" alt="" srcset="" />
@@ -528,6 +607,7 @@
               </div>
             </div>
           </div>
+          <!-- book 6 -->
           <div class="book">
             <div class="book-image">
               <img src="Assets/book-Images/SF6.jpg" alt="" srcset="" />
@@ -543,36 +623,47 @@
           </div>
         </div>
       </div>
-      <!-- footer -->
+      <!-- footer starts-->
       <footer>
+        <!-- footer-container -->
         <div class="footer-container contentblock">
+          <!-- site information -->
           <div class="site-info">
+            <!-- logo -->
             <div class="site-logo">
               <img src="Assets/Logo.svg" alt="" srcset="" />
             </div>
+            <!-- domain -->
             <div class="site-name">
-              <a href="books.html">ebookshelf.com</a>
+              <a href="index.html">ebookshelf.com</a>
             </div>
           </div>
+          <!-- category -->
           <div class="site-category-list">
+            <!-- heading -->
             <div class="heading"><p>Categories</p></div>
+            <!-- category list -->
             <div class="cat-list">
               <ul>
-                <li><a href="#cat-1" class="cat-link">Horror</a></li>
-                <li><a href="#cat-2" class="cat-link">Drama</a></li>
-                <li><a href="#cat-3" class="cat-link">Romance</a></li>
-                <li><a href="#cat-4" class="cat-link">Biography</a></li>
+                <li><a href="#discover" class="cat-link">Horror</a></li>
+                <li><a href="#discover" class="cat-link">Drama</a></li>
+                <li><a href="#discover" class="cat-link">Romance</a></li>
+                <li><a href="#discover" class="cat-link">Biography</a></li>
               </ul>
             </div>
           </div>
+          <!-- newsletter -->
           <div class="news-info">
+            <!-- heading & discription -->
             <div class="heading-info">
               <div class="heading"><p>News/Updates</p></div>
               <div class="heading-description">
                 <p>subscribe to get latest updates of ebooks.</p>
               </div>
             </div>
+            <!--input field -->
             <div class="input-info">
+              <!-- email -->
               <div class="input-email">
                 <img src="Assets/email-icon.svg" alt="" srcset="" />
                 <input
@@ -582,21 +673,29 @@
                   placeholder="enter email"
                 />
               </div>
+              <!-- subscribe button -->
               <button>subscribe</button>
             </div>
           </div>
         </div>
+        <!-- copyright -->
         <div class="message">
           <p>copyright 2024, all right reserved.</p>
         </div>
+        <!-- copyright -->
       </footer>
+      <!-- footer ends -->
     </section>
     <!-- main content ends -->
+
+    <!-- javascript -->
+    <!-- bootstrap cdn -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="animations.js"></script>
+    <!-- javascript -->
   </body>
 </html>
