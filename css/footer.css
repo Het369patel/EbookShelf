@@ -54,6 +54,10 @@
     text-decoration: none;
 }
 
+.cat-list .cat-link:hover {
+    color: #F9D848;
+}
+
 .heading-description {
     margin-top: -16px;
 }

@@ -22,12 +22,25 @@
     background-color: #E3DAC9;
 }
 
+.manga-item-1 {
+    background-color: #247ba0;
+
+}
+
 .item-2 {
     background-color: #6082B6;
 }
 
+.manga-item-2 {
+    background-color: #70c1b3;
+}
+
 .item-3 {
     background-color: #EDC9AF;
+}
+
+.manga-item-3 {
+    background-color: #ffcb77;
 }
 
 .bookImage {

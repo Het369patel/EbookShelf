@@ -31,7 +31,9 @@
     font-weight: 500;
     text-decoration: none;
 }
-
+.NavBar .Link:hover{
+    color:#F9D848;
+}
 .NavBar .searchbox {
     display: flex;
     align-items: center;
@@ -96,6 +98,9 @@
     .menuIcon {
         display: none;
     }
+    .menu-list{
+        display: none;
+    }
 }
 
 @media (width < 768px) {
@@ -114,6 +119,9 @@
     }
 
     .NavBar .searchbox {
+        display: none;
+    }
+    .menu-list{
         display: none;
     }
 }
